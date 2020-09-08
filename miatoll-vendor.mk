@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The XPerience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -88,6 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
     vendor/xiaomi/miatoll/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     vendor/xiaomi/miatoll/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
+    vendor/xiaomi/miatoll/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/miatoll/proprietary/product/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.0.so \
     vendor/xiaomi/miatoll/proprietary/product/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.1.so \
     vendor/xiaomi/miatoll/proprietary/product/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.10.so \
@@ -102,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/product/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.8.so \
     vendor/xiaomi/miatoll/proprietary/product/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.config@1.9.so \
     vendor/xiaomi/miatoll/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/xiaomi/miatoll/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/miatoll/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/miatoll/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/xiaomi/miatoll/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
@@ -1813,3 +1815,39 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_gc02m1_filter.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_gc02m1_filter.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_s5kgm2.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_imx582.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_ov32a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_ov32a1q.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5kgm2.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_gc02m1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_gc02m1_filter.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_gc02m1_filter.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_s5kgm2.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.sunny_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sunny_gc02m1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.sunny_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sunny_imx582.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.sunny_ov32a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sunny_ov32a1q.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.tuned.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sunny_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_gc02m1_filter.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_gc02m1_filter.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_s5kgm2.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_imx582.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_ov32a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_ov32a1q.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_s5kgm2.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.ofilm_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.ofilm_gc02m1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.ofilm_gc02m1_filter.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.ofilm_gc02m1_filter.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.ofilm_s5kgm2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.ofilm_s5kgm2.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_gc02m1.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_imx582.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_imx582.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_ov32a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_ov32a1q.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin
