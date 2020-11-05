@@ -173,6 +173,10 @@
         <device name="SND_DEVICE_IN_HANDSET_MIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_FACTORY" interface="TX_CDC_DMA_TX_3"/>
 	<device name="SND_DEVICE_IN_SECONDARY_MIC_FACTORY" interface="TX_CDC_DMA_TX_3"/>        
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_VOICE" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_MUSIC" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_INTERVIEW" interface="TX_CDC_DMA_TX_3"/>
+        <device name="SND_DEVICE_IN_CAMCORDER_DMIC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_EXTERNAL" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_NS" interface="TX_CDC_DMA_TX_3"/>
