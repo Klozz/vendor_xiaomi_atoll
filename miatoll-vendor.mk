@@ -495,6 +495,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.eeprom.sunny_gc8034.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.sunny_gc8034.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensor.curtana_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.curtana_gc02m1.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensor.curtana_gc8034.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.curtana_gc8034.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensor.curtana_imx582.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.curtana_imx582.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensor.curtana_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.curtana_ov16a1q.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensor.curtana_ov2180.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.curtana_ov2180.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/camera/com.qti.sensor.curtana_ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.curtana_ov8856.so \
